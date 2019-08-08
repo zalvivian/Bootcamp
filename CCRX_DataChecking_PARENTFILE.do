@@ -66,6 +66,10 @@ local CCRX "$CCRX"
 *Year of the Survey
 local SurveyYear 2018 
 local SYShort 18 
+global SurveyYear 2019
+global SurveyMonth1 7
+global SurveyMonth2 8
+global SurveyMonth3 9
 
 ******CSV FILE NAMES ****
 *HHQ CSV File name 
