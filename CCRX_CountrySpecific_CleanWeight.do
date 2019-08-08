@@ -111,7 +111,8 @@ label var survey_languagev2 "Language of household interview"
 *Year and month of data collection.  
 
 gen FQwrongdate=1 if thisyear!=2019 & thisyear!=.
-replace FQwrongdate=1 if thismonth!=4 & thismonth!=5 & thismonth!=6 & thismonth!=. 
+replace FQwrongdate=1 if thismonth!=7 & thismonth!=8 & thismonth!=9 & thismonth!=.
+ 
 *If survey spans across 2 years
 /*replace FQwrongdate=1 if thisyear!=2018 & thisyear!=.
 replace FQwrongdate=1 if thismonth!=1 & thismonth!=. 
