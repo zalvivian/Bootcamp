@@ -78,7 +78,7 @@ replace `var'=1 if assets_`y'=="`var'"
 drop assets_*
 
 *Livestock
-foreach x in cows_bulls horses goats sheep chickens pigs {
+foreach x in cows_bulls sheep chickens pigs {
 capture rename owned_`x'* `x'_owned
 capture label var `x'_owned 			"Total number of `x' owned"
 destring `x'_owned, replace
@@ -110,7 +110,7 @@ label var survey_languagev2 "Language of household interview"
 **Country specific female questionnaire changes
 *Year and month of data collection.  
 
-gen FQwrongdate=1 if thisyear!=2018 & thisyear!=.
+gen FQwrongdate=1 if thisyear!=2019 & thisyear!=.
 replace FQwrongdate=1 if thismonth!=4 & thismonth!=5 & thismonth!=6 & thismonth!=. 
 *If survey spans across 2 years
 /*replace FQwrongdate=1 if thisyear!=2018 & thisyear!=.
