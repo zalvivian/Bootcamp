@@ -586,7 +586,7 @@ local x=r(nvars)
 foreach var in not_married infrequent_sex menopausal_hysterectomy infecund not_menstruated ///
 breastfeeding husband_away fatalistic respondent_opposed partner_opposed others_opposed religion ///
 no_knowledge no_source_known side_effects health no_access cost preferred_unavailable ///
-no_method_available inconvenient interferes_with_body other {
+no_method_available inconvenient interferes_with_body other dontknow noresponse{
 gen wn`var'=0 if why_not_using!="" & why_not_using!="-99"
 forval y=1/`x' {
 replace wn`var'=1 if why_not_using_`y'=="`var'"
