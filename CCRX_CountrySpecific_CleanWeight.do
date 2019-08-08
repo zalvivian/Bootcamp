@@ -110,8 +110,8 @@ label var survey_languagev2 "Language of household interview"
 **Country specific female questionnaire changes
 *Year and month of data collection.  
 
-gen FQwrongdate=1 if thisyear!=2018 & thisyear!=.
-replace FQwrongdate=1 if thismonth!=4 & thismonth!=5 & thismonth!=6 & thismonth!=. 
+gen FQwrongdate=1 if thisyear!=$SurveyYear & thisyear!=.
+replace FQwrongdate=1 if thismonth!=$SurveyMonth1 & thismonth!=$SurveyMonth2 & thismonth!=$SurveyMonth3 & thismonth!=. 
 *If survey spans across 2 years
 /*replace FQwrongdate=1 if thisyear!=2018 & thisyear!=.
 replace FQwrongdate=1 if thismonth!=1 & thismonth!=. 
