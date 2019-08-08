@@ -52,11 +52,11 @@ set maxvar 30000
 *******************************************************************************
 *BEFORE USE THE FOLLOWING NEED TO BE UPDATED:
 *Country/Round/Abbreviations
-global Country CD	 
-global Round Round7
-global round 7
-global country CD
-global CCRX CDR7
+global Country US	 
+global Round Round1
+global round 1
+global country US
+global CCRX USR1
 
 *Locals (Dont need to Update)
 local Country "$Country"
@@ -66,6 +66,10 @@ local CCRX "$CCRX"
 *Year of the Survey
 local SurveyYear 2018 
 local SYShort 18 
+global SurveyYear 2019
+global SurveyMonth1 7
+global SurveyMonth2 8
+global SurveyMonth3 9
 
 ******CSV FILE NAMES ****
 *HHQ CSV File name 
