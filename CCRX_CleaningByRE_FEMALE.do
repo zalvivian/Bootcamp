@@ -29,4 +29,6 @@ replace married=1 if metainstanceID=="uuid:xxxxxxxxxx"
 replace married=4 if metainstanceID=="uuid:yyyyyyyyyyy"
 *RE N0001
 replace age_at_first_sex=20 if metainstanceID=="uuid:xxxxxxxxxx" 
+*RE N0003
+drop if metainstanceID=="uuid:zzzzzzzzzz"
 save, replace
